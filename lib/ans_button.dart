@@ -19,7 +19,10 @@ class AnsButton extends StatelessWidget {
           foregroundColor: Colors.white,
           side: const BorderSide(
               color: Color.fromARGB(255, 66, 8, 147), width: 1.0)),
-      child: Text(btnText),
+      child: Text(
+        btnText,
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }
