@@ -37,9 +37,6 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
           children: [
             Text(
               currentQuestion.text,
-              // style: const TextStyle(
-              //   color: Colors.white,
-              // ),
               style: GoogleFonts.raleway(
                 color: Colors.white,
                 fontSize: 24,
@@ -53,23 +50,6 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             ...currentQuestion.getShuffledAns().map((item) {
               return AnsButton(btnText: item, onTap: ansQuestion);
             })
-
-            /* AnsButton(
-              btnText: currentQuestion.answers[0],
-              onTap: () {},
-            ),
-            AnsButton(
-              btnText: currentQuestion.answers[1],
-              onTap: () {},
-            ),
-            AnsButton(
-              btnText: currentQuestion.answers[2],
-              onTap: () {},
-            ),
-            AnsButton(
-              btnText: currentQuestion.answers[3],
-              onTap: () {},
-            ), */
           ],
         ),
       ),
