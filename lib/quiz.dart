@@ -12,23 +12,9 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
-  // it can be null, thats why ? is used
-  // Widget? activeScreen;
-
-  // alt+shift+a
-
-  // @override
-  // void initState() {
-  //   activeScreen = StartScreen(switchScreen);
-  //   // TODO: implement initState
-  //   super.initState();
-  // }
-
-  //for removing initState
   var activeScreen = 'start_screen';
   void switchScreen() {
     setState(() {
-      // activeScreen = const QuestionsScreen();
       activeScreen = 'questions_screen';
     });
   }
@@ -56,11 +42,6 @@ class _QuizState extends State<Quiz> {
               end: Alignment.bottomRight,
             ),
           ),
-          // child: activeScreen,
-          // another method
-          /* child: activeScreen == 'strat_screen'
-              ? StartScreen(switchScreen)
-              : const QuestionsScreen(), */
           child: screenWidget,
         ),
       ),
