@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz/data/questions.dart';
+import 'package:flutter_quiz/questions_summary.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({
@@ -39,7 +40,7 @@ class ResultScreen extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            const Text('List of ans and questions!'),
+            QuestionsSummary(getSummaryData()),
             const SizedBox(
               height: 30,
             ),
