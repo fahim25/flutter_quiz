@@ -36,7 +36,7 @@ class StartScreen extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
               side: const BorderSide(
-                color: const Color.fromARGB(255, 255, 253, 253),
+                color: Color.fromARGB(255, 255, 253, 253),
               ),
             ),
             // child: const Text(
