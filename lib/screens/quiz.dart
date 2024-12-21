@@ -34,6 +34,13 @@ class _QuizState extends State<Quiz> {
     }
   }
 
+  void restartQuiz() {
+    setState(() {
+      selectedAns = [];
+      activeScreen = 'questions_screen';
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     //for if statement
@@ -48,6 +55,7 @@ class _QuizState extends State<Quiz> {
     if (activeScreen == 'result_screen') {
       screenWidget = ResultScreen(
         chosenAns: selectedAns,
+        onRestart: restartQuiz,
       );
     }
 
